@@ -1,0 +1,82 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');/
+
+
+:root {
+    --bg-color: #522258;
+    --primary-color: #8C3061;
+    --secondary-color: #C63C51;
+    --font: "DM+Sans", sans-serif;
+}
+
+/* código omitido */
+
+body {
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    font-family: var(--font);
+    height: 100vh;
+    margin: 0;
+}
+
+/* código omitido */
+
+h1 {
+    font-size: 2rem;
+    color: var(--bg-color);
+     font-weight: 700;
+}
+
+/* código omitido */
+
+nav {
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+}
+
+/* código omitido */
+
+/* código omitido */
+
+nav a {
+    text-decoration: none;
+    color: var(--bg-color);
+     margin: 0 2rem 1rem 0rem;
+     font-size: 1.2rem;
+}
+
+
+/* código omitido */
+
+header {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 1px;
+}
+
+/* código omitido */
+
+/* código omitido */
+
+nav a:hover {
+    text-decoration: underline;
+    transform: scale(0.90);
+    transition: transform 0.1s;
+}
+
+/* código omitido */
+
+/* código omitido */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    width: 100%;
+    height: 3rem;
+    margin-top: 2rem;
+}
+
