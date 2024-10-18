@@ -3,10 +3,10 @@ const url = 'https://raw.githubusercontent.com/luisaoliveiraa/ciencia-de-dados/r
 async function visualizarInformacoesGlobais(){
     const res = await fetch(url)
     const dados = await res.json()
-    const pessoasComAcesso = (dados.total_pessoas_com_acesso_a_educacao / 1e9)
+    const pessoasComAcesso = (dados.total_pessoas_que_praticam_esportes_regularmente/ 1e9)
     const pessoasNoMundo = (dados.total_pessoas_mundo / 1e9)
-    const horas = parseInt(dados.tempo_medio_dia_estudando)
-    //const minutos = Math.round((dados.tempo_medio_dia_estudando - horas) * 100)
+    const horas = parseInt(dados.tempo_medio_semana_praticando_esportes)
+    //const minutos = Math.round((dados.tempo_medio_semana_praticando_esportes - horas) * 100)
     const total_pessoas_que_praticam_esportes_regularmente = ((pessoasComAcesso / pessoasNoMundo) * 100).toFixed(2)
     //console.log(dados)
     const paragrafo = document.createElement('p')
