@@ -79,4 +79,27 @@ footer {
     height: 3rem;
     margin-top: 2rem;
 }
+.graficos-container__texto {
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 2rem;
+    border: var(--secondary-color) solid 2px;
+}
 
+span {
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+footer{
+    display:flex; /*area do rodapé flexível*/
+    align-items: center; /*alinhamento de itens
+                            ao centro*/
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    width: 100%; /*largura ocupando 100% do rodapé*/
+    height: 3rem; /*altura 3x a medida do root*/
+    margin-top: 2rem; /*altura do topo da margem
+                        externa do rodapé em 2 rem*/
+}
