@@ -1,6 +1,6 @@
 import { getCSS, tickConfig } from "./common.js"
 
-async function quantidadeUsuariosPorRede() {
+async function quantidadeDeUsuarios() {
     const url = 'https://raw.githubusercontent.com/luisaoliveiraa/ciencia-de-dados/refs/heads/main/base-de-dados/esportes-dados-globais.json';
     const res = await fetch(url)
     const dados = await res.json()
