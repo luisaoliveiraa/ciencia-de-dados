@@ -4,12 +4,12 @@ async function quantidadeDeUsuarios() {
     const url = 'https://raw.githubusercontent.com/luisaoliveiraa/ciencia-de-dados/refs/heads/main/base-de-dados/esportes-dados-globais.json';
     const res = await fetch(url)
     const dados = await res.json()
-    const nomeDasRedes = Object.keys(dados)
+    const nomeDasEsportes = Object.keys(dados)
     const quantidadeDeUsuarios = Object.values(dados)
 
     const data = [
         {
-            x: nomeDasRedes,
+            x: nomeDasEsportes,
             y: quantidadeDeUsuarios,
             type: 'bar',
             marker: {
@@ -18,11 +18,11 @@ async function quantidadeDeUsuarios() {
         }
     ]
 
-    const laytout = {
+    const layout = {
         plot_bgcolor: getCSS('--bg-color'),
         paper_bgcolor: getCSS('--bg-color'),
         title: {
-            text: 'Redes sociais com mais usuários',
+            text: 'Esportes mais praticado',
             x: 0,
             font: {
                 color: getCSS('--primary-color'),
@@ -33,7 +33,7 @@ async function quantidadeDeUsuarios() {
         xaxis: {
             tickfont: tickConfig,
             title: {
-                text: 'Nome das redes',
+                text: 'Esportes',
                 font: {
                     color: getCSS('--secondary-color')
                 }
