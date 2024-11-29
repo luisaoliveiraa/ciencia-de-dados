@@ -10,7 +10,7 @@ async function quantidadeDeUsuarios() {
     const data = [
         {
             x: nomeDasEsportes,
-            y: quantidadeDeUsuarios,
+            y: quantidadeUsuarios,
             type: 'bar',
             marker: {
                 color: getCSS('--primary-color')
