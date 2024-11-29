@@ -22,7 +22,7 @@ async function quantidadeDeUsuarios() {
         plot_bgcolor: getCSS('--bg-color'),
         paper_bgcolor: getCSS('--bg-color'),
         title: {
-            text: 'Esportes mais praticado',
+            text: 'Esportes mais praticados',
             x: 0,
             font: {
                 color: getCSS('--primary-color'),
